@@ -85,6 +85,7 @@
 @property (nonatomic, assign) double currentTime;
 @property (nonatomic, assign) int currentFrame;
 @property (nonatomic, assign) double position;
+@property (nonatomic, assign) double exactPosition;
 @property (nonatomic, assign) double playbackRate;
 @property (nonatomic, assign, getter = loops, setter = setLoops:) BOOL bLoops;
 @property (nonatomic, assign) float volume;
