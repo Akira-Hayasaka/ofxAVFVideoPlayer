@@ -411,6 +411,13 @@ void ofxAVFVideoPlayer::setPosition(float pct)
 }
 
 //--------------------------------------------------------------
+void ofxAVFVideoPlayer::setExactPosition(float pct)
+{
+    [moviePlayer setExactPosition:pct];
+}
+
+
+//--------------------------------------------------------------
 void ofxAVFVideoPlayer::setTime(float position)
 {
     if (![moviePlayer isLoaded]) {

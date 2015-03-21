@@ -733,6 +733,15 @@ int count = 0;
 }
 
 //--------------------------------------------------------------
+- (void)setExactPosition:(double)position
+{
+    double time = self.duration * position;
+    [_player seekToTime:CMTimeMakeWithSeconds(time, _duration.timescale)
+        toleranceBefore:kCMTimeZero
+         toleranceAfter:kCMTimeZero];
+}
+
+//--------------------------------------------------------------
 - (void)setPlaybackRate:(double)playbackRate
 {
     _playbackRate = playbackRate;

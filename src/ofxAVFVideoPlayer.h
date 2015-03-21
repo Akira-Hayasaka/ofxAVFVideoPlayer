@@ -72,6 +72,7 @@ public:
     float               getVolume();
     
     void                setPosition(float pct);
+    void                setExactPosition(float pct);
     void                setTime(float seconds);
     void                setPositionInSeconds(float seconds);
     void                setFrame(int frame); // frame 0 = first frame...
