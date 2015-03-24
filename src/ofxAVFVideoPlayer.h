@@ -14,7 +14,7 @@
 #import "ofxAVFVideoRenderer.h"
 #endif
 
-class ofxAVFVideoPlayer  : public ofBaseVideoPlayer {
+class ofxAVFVideoPlayer  : public ofBaseVideoPlayer, public ofBaseDraws {
     
 public:
     
